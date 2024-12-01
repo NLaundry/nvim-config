@@ -1,0 +1,57 @@
+require("luasnip.loaders.from_vscode").lazy_load()
+
+
+--
+-- local mcii_snippet = [[
+-- ## MCII
+--
+-- ### Reflect on Yesterday's MCII stuff
+--
+-- ### What do I want to do today?
+--
+-- ### What would it be like if I didn't do it?
+--
+-- ### What would it be like if I did?
+--
+-- ### What might block me?
+--
+-- ### IF THEN Rules
+--
+-- ]]
+--
+--
+-- local ls = require("luasnip")
+-- -- some shorthands...
+-- local snip = ls.snippet
+-- local node = ls.snippet_node
+-- local text = ls.text_node
+-- local insert = ls.insert_node
+-- local func = ls.function_node
+-- local choice = ls.choice_node
+-- local dynamicn = ls.dynamic_node
+--
+-- local date = function() return { os.date('%Y-%m-%d') } end
+--
+-- ls.add_snippets(nil, {
+--     all = {
+--         snip({
+--             trig = "mcii",
+--             namr = "MCII_Prompt",
+--             dscr = "MCII Journaling prompt template in markdown",
+--         }, {
+--             text({ "## MCII", "",
+--                 "### Reflect on Yesterday's MCII stuff", "",
+--                 "### What do I want to do today?", "",
+--                 "### What would it be like if I didn't do it?", "",
+--                 "### What would it be like if I did?", "",
+--                 "### What might block me?", "",
+--                 "### IF THEN Rules", "" }),
+--             -- text("### Reflecton Yesterday's MCII Stuff"),
+--             -- text("### What do I want to do today?"),
+--             -- text("### What would it be like if I didn't do it?"),
+--             -- text("### What would it be like if I did do it?"),
+--             -- text("### What might block me?"),
+--             -- text("### Solutions"),
+--         }),
+--     },
+-- })
